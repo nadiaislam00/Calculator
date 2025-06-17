@@ -7,27 +7,28 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Calculator</title>
 </head>
-<body>
-    <div id="calculator">
-        <input type="text" id="display">
-        <div id="keys">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('+')">+</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('7')">7</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('8')">8</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('9')">9</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('-')">-</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('4')">4</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('5')">5</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('6')">6</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('*')">*</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('1')">1</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('2')">2</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('3')">3</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('/')">/</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('0')">0</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('.')">.</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="calculate()">=</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="clearDisplay()">C</button>
+<body class="m-0 flex justify-center items-center h-[100vh]">
+    <div id="calculator" class="font-serif bg-pink-100 rounded-2xl max-w-[200px] p-2">
+        <input type="text" id="display" class="w-full p-2 border-none text-left text-pink-600 bg-white rounded-md">
+        <div id="keys" class="grid grid-cols-4 gap-2 p-3">
+            <button class="btn btn-xs border-pink-600 text-pink-600 cursor-pointer sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('+')">+</button>
+            <button class="btn cursor-pointer  bg-pink-700 text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('7')">7</button>
+            <button class="btn cursor-pointer bg-pink-700 text-white btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('8')">8</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('9')">9</button>
+
+            <button class="btn cursor-pointer btn-xs border-pink-600 text-pink-600 sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('-')">-</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('4')">4</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('5')">5</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('6')">6</button> 
+            <button class="btn cursor-pointer btn-xs border-pink-600 text-pink-600 sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('*')">*</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('1')">1</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('2')">2</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('3')">3</button> 
+            <button class="btn cursor-pointer btn-xs border-pink-600 text-pink-600 sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('/')">/</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('0')">0</button>
+            <button class="btn cursor-pointer btn-xs bg-pink-700 text-white sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="appendToDisplay('.')">.</button>
+            <button class="btn cursor-pointer btn-xs border-pink-600 text-pink-600 sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="calculate()">=</button> 
+            <button class="btn cursor-pointer btn-xs border-pink-600 text-pink-600 sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl" onclick="clearDisplay()">C</button>
         </div>
     </div>
 </body>
